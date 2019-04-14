@@ -1,3 +1,20 @@
+
+
+## TDD로 간단한 계산기 만들기를 위한 Fill Codes in Empty Space!
+
+
+#### 생각생각
+**TDD로 개발하는 방식은 Test Code를 먼저 작성한 후 Develop!** 그래서 Operator, Parser, Printer 테스트케이스를 각각 만들었다.
+각각 만든 테스트 케이스에서 필요한 메소드와 return 값을 정한 후 작성!
+
+
+#### 실행실행
+- Operator, Parser, Printer class 생성
+
+<br/>
+
+***
+
 ## TDD로 간단한 계산기 만들기
 
 ##### 요구사항 1단계
