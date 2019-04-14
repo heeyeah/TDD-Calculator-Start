@@ -14,5 +14,29 @@ repositories {
 }
 
 dependencies {
+
+    compile group: 'org.projectlombok', name: 'lombok', version: '1.16.20'
+    testImplementation('org.junit.jupiter:junit-jupiter:5.4.1')
     testCompile group: 'junit', name: 'junit', version: '4.12'
+    testCompile group: 'org.junit.platform', name: 'junit-platform-runner', version: '1.0.1'
+    testCompile group: 'org.junit.jupiter', name: 'junit-jupiter-engine', version: '5.0.1'
+
+    testCompile("org.assertj:assertj-core:3.11.1")
+
+}
+
+test {
+    useJUnitPlatform()
+
+    //http://blog.hkwon.me/gradle-test-task-logging/
+    //https://docs.gradle.org/current/dsl/org.gradle.api.tasks.testing.logging.TestLogging.html
+    testLogging {
+        events "passed", "skipped", "failed"
+        showStandardStreams = true
+        showCauses = true
+        showExceptions = true
+        showStackTraces = true
+        exceptionFormat = 'full'
+
+    }
 }
